@@ -1,0 +1,10 @@
+{
+	"storeId":"customVitalsStoreId",
+	"title":"Vitals (Custom Data)",
+	"navigationPriority":35,
+	"resourcesPaths":[
+		"/store/customVitalsStoreId/phi/directives/items/customVitals.js",
+		"/store/customVitalsStoreId/phi/directives/items/customVitals.config.json",
+		"/store/customVitalsStoreId/phi/directives/items/customVitals.html"
+	]
+}

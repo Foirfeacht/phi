@@ -1,0 +1,7 @@
+<div>
+	Problem Desc
+	<div ng-repeat="problem in phiData.problems">
+		<input ng-model="problem.description"/><span class="label label-warning" ng-show="isDirty(problem)">Unsaved</span>
+	</div>
+	<button ng-click="addProblem();">Add</button>
+</div>

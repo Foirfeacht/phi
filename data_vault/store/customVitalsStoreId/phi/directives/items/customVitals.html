@@ -1,0 +1,193 @@
+<div class="row phiTab">
+	<div class="col-md-4">
+		<phi-items-list>
+			<phi-items-list-bar></phi-items-list-bar>
+			
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<table ng-table="tableParams" class="table">
+						<tr ng-repeat="vital in $data" ng-click="onSelect(vital)" ng-class="{'active': isSelected(vital)}">
+							<td data-title="'Date'" sortable="'date'" width="20%">
+								{{vital.date | date:'MM/dd/yyyy'}} 
+								<span class="label label-warning" ng-show="isDirty(vital) || isNew(vital)">Unsaved</span>
+								<span class="label label-danger" ng-hide="isValid(vital)">Invalid</span>
+							</td>
+							<td data-title="'Height'" sortable="'height'" width="20%">
+								<span ng-show="isRelevant(vital)">{{vital.height.value}} {{vital.height.units}}</span>
+							</td>
+							<td data-title="'Weight'" sortable="'weight'" width="20%">
+								<span ng-show="isRelevant(vital)">{{vital.weight.value}} {{vital.weight.units}}</span>
+							</td>
+							<td data-title="'BP'" width="40%">
+								<span ng-show="isRelevant(vital)">{{vital.bpSystolic.value}} {{vital.bpSystolic.units}} / {{vital.bpDiastolic.value}} {{vital.bpDiastolic.units}}</span>
+							</td>
+						</tr>						
+					</table>
+				</div>
+			</div>
+			
+			
+		</phi-items-list>
+	</div>
+	<div class="col-md-8" style="height: 100%;">
+		<phi-item-form item="singleSelectedItem">
+			
+			
+			<div class="row">
+				<div class="col-md-4">
+					<label class="control-label">Date</label> 
+					<input type="datetime" class="form-control" ng-model="singleSelectedItem.date" datepicker-popup="MM/dd/yyyy HH:mm" ng-required="true">
+				</div>
+				<div class="col-md-4">
+					<label class="control-label">Source</label>
+					<input id="source" type="text" class="form-control" ng-model="singleSelectedItem.user" readonly/>
+				</div> 
+				<div class="col-md-2">
+					<label class="control-label">Status</label>
+					<div class="checkbox">
+						<label>
+						 	<input type="checkbox" ng-model="singleSelectedItem.notEntered" ng-change="notEnteredCheckboxTouched(vital)"/>Not Entered
+						</label>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div ng-show="singleSelectedItem.notEntered">
+						<label class="control-label">Not Entered Reason</label>
+						<select id="statusText" class="form-control" ng-model="singleSelectedItem.notEnteredReason" >
+							<option value="NoReasonIdentified">No Reason Identified</option>
+							<option value="Patient">Patient</option>
+							<option value="Medical">Medical</option>
+							<option value="System">System</option>								
+						</select>						
+					</div>	
+				</div>
+			</div>
+			<fieldset ng-disabled="singleSelectedItem.notEntered">
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-lg-6">						
+						<div class="panel panel-default">
+							<div class="panel-heading">Anthropometric Values</div>
+							<div class="panel-body">
+								<label class="control-label">Height/Length</label>
+								<div class="row">
+									<div class="col-xs-4">
+										<input id="heightValue" type="number" class="form-control" ng-model="singleSelectedItem.height.value" ng-disabled="singleSelectedItem.heightOutOfScope" ng-change="initHeightUnits(singleSelectedItem);recalculateBmi(singleSelectedItem);"/>
+									</div>
+									<div class="col-xs-4">
+										<select id="heightUnits" class="form-control" ng-model="singleSelectedItem.height.units" ng-disabled="singleSelectedItem.heightOutOfScope" ng-change="recalculateBmi(singleSelectedItem);">
+											<option value="in">in</option>
+											<option value="cm">cm</option>											
+										</select>
+									</div>
+									<div class="col-xs-4">
+										<div class="checkbox">
+											<label>
+											 	<input type="checkbox" ng-model="singleSelectedItem.heightOutOfScope" ng-change="onHeightOutOfScopeChanged(singleSelectedItem);" />Out of scope
+											</label>
+										</div>									
+									</div>
+								</div>	
+								
+								<label class="control-label">Weight</label>
+								<div class="row">
+									<div class="col-xs-4">
+										<input id="weightValue" type="number" class="form-control" ng-model="singleSelectedItem.weight.value" ng-disabled="singleSelectedItem.weightOutOfScope" ng-change="initWeightUnits(singleSelectedItem);recalculateBmi(singleSelectedItem);"/>
+									</div>
+									<div class="col-xs-4">
+										<select id="weightUnits" class="form-control" ng-model="singleSelectedItem.weight.units" ng-disabled="singleSelectedItem.weightOutOfScope" ng-change="recalculateBmi(singleSelectedItem);">
+											<option value="lbs">lbs</option>
+											<option value="kg">kg</option>
+										</select>
+									</div>
+									<div class="col-xs-4">
+										<div class="checkbox">
+											<label>
+											 	<input type="checkbox" ng-model="singleSelectedItem.weightOutOfScope" ng-change="onWeightOutOfScopeChanged(singleSelectedItem);"/>Out of scope
+											</label>	
+										</div>								
+									</div>
+								</div>	
+								
+								<label class="control-label">BMI</label>
+								<div class="row">
+									<div class="col-xs-12">
+										<span style="padding-left: 12px;">{{singleSelectedItem.bmi}}</span>
+									</div>
+								</div>
+							</div>
+						</div>											
+					</div>
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Blood Pressure</div>
+							<div class="panel-body">
+								<label class="control-label">BP Systolyc</label>
+								<div class="row">
+									<div class="col-xs-4">
+										<input id="bpSystolicValue" type="number" class="form-control" ng-model="singleSelectedItem.bpSystolic.value" ng-disabled="singleSelectedItem.bpOutOfScope" ng-change="initBpUnits(singleSelectedItem.bpSystolic);"/>
+									</div>
+									<div class="col-xs-4">
+										<select id="bpSystolicUnits" class="form-control" ng-model="singleSelectedItem.bpSystolic.units" ng-disabled="singleSelectedItem.bpOutOfScope">
+											<option value="mmHg">mmHg</option>								
+										</select>
+									</div>
+								</div>	
+								
+								<label class="control-label">BP Diastolic</label>
+								<div class="row">
+									<div class="col-xs-4">
+										<input id="bpDiastolicValue" type="number" class="form-control" ng-model="singleSelectedItem.bpDiastolic.value" ng-disabled="singleSelectedItem.bpOutOfScope" ng-change="initBpUnits(singleSelectedItem.bpDiastolic);"/>
+									</div>
+									<div class="col-xs-4">
+										<select id="bpDiastolicUnits" class="form-control" ng-model="singleSelectedItem.bpDiastolic.units" ng-disabled="singleSelectedItem.bpOutOfScope">
+											<option value="mmHg">mmHg</option>								
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>											
+					</div>
+				</div>
+				<div class="row">					
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">Counseling</div>
+							<div class="panel-body">			
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="checkbox">
+											<label>
+											 	<input type="checkbox" ng-model="singleSelectedItem.nutritionCounseling"/>Nutrition Counseling
+											</label>	
+										</div>																		
+									</div>
+								</div>	
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="checkbox">
+											<label>
+											 	<input type="checkbox" ng-model="singleSelectedItem.physActivityCounseling"/>Physical Activity Counseling
+											</label>
+										</div>									
+									</div>
+								</div>	
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="checkbox">
+											<label>
+											 	<input type="checkbox" ng-model="singleSelectedItem.followupPlanDocumented"/>Followup Plan Documented
+											</label>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>											
+					</div>
+				</div>   
+			</fieldset>
+			
+			
+		</phi-item-form>		
+	</div>
+</div>

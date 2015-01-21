@@ -1,0 +1,10 @@
+{
+	"storeId":"customProblemsStoreId",
+	"title":"Problems (Shared Data)",
+	"navigationPriority":1000,
+	"resourcesPaths":[
+		"/store/customProblemsStoreId/phi/directives/items/customProblems.js",
+		"/store/customProblemsStoreId/phi/directives/items/customProblems.config.json",
+		"/store/customProblemsStoreId/phi/directives/items/customProblems.html"
+	]
+}

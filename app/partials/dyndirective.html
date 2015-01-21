@@ -1,0 +1,33 @@
+<div style="height: 100%;">
+  <div>
+    <button class="btn btn-primary navbar-btn" ng-click="reload()">
+      <i class="fa fa-lg fa-refresh"></i>Reload
+    </button>
+    <button class="btn btn-success navbar-btn" ng-click="saveChanges()">
+      <i class="fa fa-lg fa-save"></i>Save
+    </button>
+    <button class="btn btn-warning navbar-btn" ng-click="discardChanges()">
+      <i class="fa fa-lg fa-undo"></i>Discard All Changes
+    </button>
+  </div>
+  <div class="phiContainer" style="position: absolute; top: 50px; left: 0; right: 0; bottom: 0;">
+    <ul id="phiEmulatorTabs" class="nav nav-tabs" role="tablist">
+      <li><a href="#dashboardTab">Dashboard</a></li>
+      <li class="active"><a href="#directiveTab">{{customModuleManifest.title}}</a></li>
+    </ul>
+    <div id="phiTabsContent" class="tab-content" style="position: absolute; top: 50px; left: 0; right: 0; bottom: 0;">
+      <div id="dashboardTab" class="tab-pane fade">
+        <div class="row">
+          <div class="col-sm-6 dashboardColumn">
+            <brief-summary-panel title="{{dynamicPanel.title}}" id="{{dynamicPanel.id}}" panel-state="dashboardState[dynamicPanel.id]" ng-repeat="dynamicPanel in dynamicDashboardPanels">
+              <div render-dynamic-panel></div>
+            </brief-summary-panel>
+          </div>
+        </div>
+      </div>
+      <div id="directiveTab" class="tab-pane fade in active">
+        <dynamic-directive element-name="{{customModuleManifest.mainDirective}}" phi-data="phiData"></dynamic-directive>
+      </div>
+    </div>
+  </div>
+</div>

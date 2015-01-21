@@ -1,0 +1,1 @@
+Vault and VaultQ resources path changed - JS template changed

@@ -1,0 +1,17 @@
+defineDynamicDirective(function() { 
+  return {
+    name : '<%= directiveName %>',
+    directive : ['phiCustomModuleDataService', function(phiCustomModuleDataService) {
+      return {
+        restrict : 'E',
+        scope : {
+          'phiData' : '='
+        },
+        templateUrl : '../data_vault/store/<%= storeId %>/phi/directives/items/<%= directiveName %>.html',
+        link : function(scope, element, attrs, controller) {
+          
+        }
+      };
+    }]
+  };
+});

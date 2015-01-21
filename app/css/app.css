@@ -1,0 +1,10 @@
+@import url("phi.css");
+
+/* app css stylesheet */
+
+body, html, ng-view {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}

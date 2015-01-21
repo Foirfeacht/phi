@@ -1,0 +1,25 @@
+[
+   {
+   		"id": "c27f82a4-4f64-4bb1-a53a-7aefd685bc6e",
+   		"active":true,
+      "date":"2015-01-09T12:17:52.276Z",      
+      "height":{
+         "value":176,
+         "units":"cm"
+      },
+      "bmi":23.24,
+      "weight":{
+         "value":72,
+         "units":"kg"
+      },
+      "bpSystolic":{
+         "value":125,
+         "units":"mmHg"
+      },
+      "bpDiastolic":{
+         "value":90,
+         "units":"mmHg"
+      },
+      "nutritionCounseling":true
+   }
+]

@@ -1,0 +1,1102 @@
+{
+  "patientInfo": {
+    "personId": "4206001",
+    "name": {
+      "givenName": "CINDY",
+      "secondGivenName": "CINDY",
+      "middleName": null,
+      "surname": "RELLA",
+      "displayedName": "CINDY CINDY RELLA"
+    },
+    "addresses": {
+      "addresses": [
+        {
+          "street": "99 GLASS SLIPPER LANE",
+          "street2": null,
+          "city": "FAIRYLANDSSSSS",
+          "state": "NJ",
+          "zip": "07740",
+          "country": "US",
+          "displayedAddress": "99 GLASS SLIPPER LANE, FAIRYLANDSSSSS, NJ, 07740, US"
+        }
+      ]
+    },
+    "contacts": {
+      "contacts": [
+        {
+          "contactType": null,
+          "value": "123 456-7890"
+        },
+        {
+          "contactType": null,
+          "value": "987 856-1254"
+        }
+      ]
+    },
+    "ctrlNumber": "VRC1234567",
+    "dateOfBirth": "1958-02-24T05:00:00.000+0000",
+    "exactAge": "56 yrs 11 mo",
+    "ssn": null,
+    "sex": "M",
+    "email": "jessicap@vericle.com",
+    "maritalStatus": "Single",
+    "employmentStatus": "Full time employed",
+    "preferredLanguage": "ace - Achinese",
+    "race": "2054-5 - Black or African American",
+    "ethnicity": null
+  },
+  "vitals": [
+    {
+      "id": "1417184997992715567",
+      "timestamp": 1417185020078,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-11-28T14:29:57.992+0000",
+      "height": {
+        "value": 180,
+        "units": "cm"
+      },
+      "weight": {
+        "value": 78,
+        "units": "kg"
+      },
+      "bmi": 24.07,
+      "bpSystolic": {
+        "value": 125,
+        "units": "mmHg"
+      },
+      "bpDiastolic": {
+        "value": 85,
+        "units": "mmHg"
+      },
+      "heightOutOfScope": false,
+      "weightOutOfScope": false,
+      "bpOutOfScope": false,
+      "nutritionCounseling": false,
+      "physActivityCounseling": false,
+      "followupPlanDocumented": false,
+      "notEntered": false,
+      "notEnteredReason": null
+    }
+  ],
+  "problems": [
+    {
+      "id": "1418810280560060992",
+      "timestamp": 1420806470367,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-12-17T09:58:00.560+0000",
+      "endDate": "2014-11-30T21:00:00.000+0000",
+      "problemType": {
+        "value": "409586006",
+        "description": "Complaint",
+        "codingSystem": "SCT"
+      },
+      "problemValueSnomed": {
+        "value": "247334008",
+        "description": "Sensation as if period due (finding)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "problemValueIcd": null,
+      "problemStatus": {
+        "value": "55561003",
+        "description": "Active",
+        "codingSystem": "SNOMED CT"
+      },
+      "description": "This is free text",
+      "noProblemKnown": false
+    },
+    {
+      "id": "1418300730416063031",
+      "timestamp": 1418300761931,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-12-01T12:25:30.416+0000",
+      "endDate": "2014-12-06T21:00:00.000+0000",
+      "problemType": {
+        "value": "409586006",
+        "description": "Complaint",
+        "codingSystem": "SCT"
+      },
+      "problemValueSnomed": {
+        "value": "262528003",
+        "description": "Bruise of head (disorder)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "problemValueIcd": null,
+      "problemStatus": {
+        "value": "413322009",
+        "description": "Resolved",
+        "codingSystem": "SNOMED CT"
+      },
+      "description": null,
+      "noProblemKnown": false
+    }
+  ],
+  "socHistories": [
+    {
+      "id": "1417078354297023964",
+      "timestamp": 1417078354298,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-11-27T08:52:34.297+0000",
+      "endDate": null,
+      "observation": "LANGUAGE",
+      "status": "Active",
+      "source": "kirill",
+      "value": {
+        "value": "ace",
+        "description": "Achinese",
+        "codingSystem": "ISO-639-2"
+      },
+      "frequency": null,
+      "action": null,
+      "quantity": null
+    },
+    {
+      "id": "1417078354297580198",
+      "timestamp": 1417078354298,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-11-27T08:52:34.297+0000",
+      "endDate": null,
+      "observation": "EMPLOYMENT_STATUS",
+      "status": "Active",
+      "source": "kirill",
+      "value": {
+        "value": "1",
+        "description": "Full time employed",
+        "codingSystem": "SNOMED-CT"
+      },
+      "frequency": null,
+      "action": null,
+      "quantity": null
+    },
+    {
+      "id": "1417078354297900293",
+      "timestamp": 1417078354298,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-11-27T08:52:34.297+0000",
+      "endDate": null,
+      "observation": "RACE",
+      "status": "Active",
+      "source": "kirill",
+      "value": {
+        "value": "2054-5",
+        "description": "Black or African American",
+        "codingSystem": "OMB"
+      },
+      "frequency": null,
+      "action": null,
+      "quantity": null
+    },
+    {
+      "id": "1417078354297284587",
+      "timestamp": 1417078354298,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-11-27T08:52:34.297+0000",
+      "endDate": null,
+      "observation": "MARITAL_STATUS",
+      "status": "Active",
+      "source": "kirill",
+      "value": {
+        "value": "Single",
+        "description": "Single",
+        "codingSystem": "SocialHist"
+      },
+      "frequency": null,
+      "action": null,
+      "quantity": null
+    }
+  ],
+  "immunizations": [
+    {
+      "id": "1417185090477126130",
+      "timestamp": 1420806614884,
+      "active": true,
+      "user": null,
+      "patientId": null,
+      "providerId": null,
+      "startAdmDate": "2014-11-28T14:31:30.477+0000",
+      "source": "kirill",
+      "administeredVaccine": {
+        "value": "141",
+        "description": "Influenza, seasonal, injectable",
+        "codingSystem": "CVX"
+      },
+      "administeredAmount": null,
+      "admUnit": null,
+      "infoSource": null,
+      "administeringProvider": null,
+      "facility": null,
+      "substanceLotNumber": null,
+      "manufacturer": {
+        "id": "AB",
+        "conceptBacking": null,
+        "mvxCode": "AB",
+        "organization": "Abbott Laboratories",
+        "actorRole": null
+      },
+      "substanceTreatmentRefusalReason": null,
+      "immunAdmSiteCode": {
+        "value": "LA",
+        "description": "Left Arm",
+        "codingSystem": "HL70163"
+      },
+      "route": {
+        "value": "AP",
+        "description": "Apply Externally",
+        "codingSystem": "HL70162"
+      },
+      "immunizationStatus": {
+        "code": {
+          "value": "CP",
+          "description": "Complete",
+          "codingSystem": "HL70322",
+          "version": null,
+          "valueSet": null
+        },
+        "text": "Active"
+      },
+      "diseaseCode": null,
+      "expirationDate": null,
+      "vaccineInformationStatement": {
+        "vaccineFundingProgramEligibilityCategory": null,
+        "items": [
+          
+        ]
+      },
+      "guardian": {
+        "person": {
+          "personId": null,
+          "name": {
+            "givenName": null,
+            "secondGivenName": null,
+            "middleName": null,
+            "surname": null,
+            "displayedName": null
+          },
+          "addresses": {
+            "addresses": [
+              {
+                "street": null,
+                "street2": null,
+                "city": null,
+                "state": null,
+                "zip": null,
+                "country": "USA",
+                "displayedAddress": "USA"
+              }
+            ]
+          },
+          "contacts": {
+            "contacts": [
+              {
+                "contactType": null,
+                "value": null
+              }
+            ]
+          }
+        },
+        "relationshipCode": null
+      },
+      "immunizationRegistryInformation": {
+        "immunizationRegistryStatusCode": null,
+        "publicityCode": null,
+        "protectionIndicatorCode": null,
+        "protectionIndicatorEffectiveDate": null,
+        "publicityCodeEffectiveDate": null,
+        "immunizationRegistryStatusEffectiveDate": null
+      },
+      "enteredBy": null,
+      "orderingProvider": null
+    }
+  ],
+  "encounters": [
+    {
+      "id": "1417184462034730581",
+      "timestamp": 1417532255282,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-11-28T14:21:02.034+0000",
+      "encounterType": {
+        "value": "99201",
+        "description": "New visit (problem focused) ~10 min",
+        "codingSystem": "CPT-4"
+      },
+      "encounterActHl7Code": {
+        "value": "AMB",
+        "description": "ambulatory",
+        "codingSystem": "HL7 ActEncounterCode"
+      },
+      "medicalServiceActHl7Code": null,
+      "reasonForVisitText": "Blood in eyes",
+      "facility": {
+        "facilityId": "921",
+        "providerId": "123456789BPR",
+        "serviceFacilityName": "CLINIC OFFICE",
+        "address": {
+          "street": "2 Hudson St",
+          "street2": "",
+          "city": "Marlboro",
+          "state": "NJ",
+          "zip": "07746",
+          "country": "USA",
+          "displayedAddress": "2 Hudson St, Marlboro, NJ, 07746, USA"
+        },
+        "contacts": {
+          "contacts": [
+            {
+              "contactType": null,
+              "value": "7325038725"
+            }
+          ]
+        }
+      },
+      "performer": {
+        "personId": "NJ5553BPR",
+        "name": {
+          "givenName": "BOB",
+          "secondGivenName": null,
+          "middleName": null,
+          "surname": "JONES",
+          "displayedName": "BOB JONES"
+        },
+        "addresses": {
+          "addresses": [
+            
+          ]
+        },
+        "contacts": {
+          "contacts": [
+            
+          ]
+        }
+      },
+      "secondaryParticipants": [
+        
+      ],
+      "clinicalSummarySent": false,
+      "clinicalSummarySentDate": null,
+      "patientDeclineSummary": false,
+      "patientDeclineSummaryDate": null,
+      "patEducationResourceSent": false,
+      "patEducationResourceSentDate": null,
+      "transitionType": null,
+      "transitionOfCareSummaryProvided": false,
+      "transitionOfCareSummaryReceived": false,
+      "transitionOfCareMedicationReconciled": false,
+      "transitionOfCareMedicationReconciledDate": null,
+      "diagnoses": [
+        
+      ],
+      "indications": [
+        
+      ],
+      "medicationsDuringEncounter": [
+        
+      ],
+      "referralsToOtherProviders": [
+        {
+          "date": "2014-12-02T14:57:06.406+0000",
+          "referralReason": "Dr Bob Jones is a master",
+          "person": {
+            "personId": null,
+            "name": {
+              "givenName": null,
+              "secondGivenName": null,
+              "middleName": null,
+              "surname": null,
+              "displayedName": "Dr Bob Jones"
+            },
+            "addresses": {
+              "addresses": [
+                {
+                  "street": null,
+                  "street2": null,
+                  "city": null,
+                  "state": null,
+                  "zip": null,
+                  "country": "USA",
+                  "displayedAddress": "Penthagon"
+                }
+              ]
+            },
+            "contacts": {
+              "contacts": [
+                
+              ]
+            }
+          },
+          "documentSentDates": [
+            
+          ]
+        },
+        {
+          "date": "2014-12-02T14:19:11.197+0000",
+          "referralReason": "Henry is god",
+          "person": {
+            "personId": null,
+            "name": {
+              "givenName": null,
+              "secondGivenName": null,
+              "middleName": null,
+              "surname": null,
+              "displayedName": "Dr Henry Seven"
+            },
+            "addresses": {
+              "addresses": [
+                {
+                  "street": null,
+                  "street2": null,
+                  "city": null,
+                  "state": null,
+                  "zip": null,
+                  "country": "USA",
+                  "displayedAddress": "White House"
+                }
+              ]
+            },
+            "contacts": {
+              "contacts": [
+                
+              ]
+            }
+          },
+          "documentSentDates": [
+            
+          ]
+        }
+      ],
+      "status": "Active"
+    }
+  ],
+  "medications": [
+    {
+      "id": "b76b0b47f2a44902a05e77c7bb4657ce",
+      "timestamp": 1420446501079,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "newcropAttributes": {
+        "originalPrescriptionGuid": "b76b0b47-f2a4-4902-a05e-77c7bb4657ce",
+        "prescriptionGuid": "b76b0b47-f2a4-4902-a05e-77c7bb4657ce",
+        "drugId": "279394",
+        "rxcui": "745679",
+        "drugName": "albuterol sulfate",
+        "drugInfo": "albuterol sulfate HFA 90 mcg/actuation aerosol inhaler",
+        "strength": "90",
+        "strengthUom": "mcg/actuation",
+        "dosageNumberTypeId": "6",
+        "dosageNumberDescription": "2",
+        "dosageFormTypeId": "9",
+        "dosageFormDescription": "puff",
+        "dosageRouteTypeId": "11",
+        "dosageRouteDescription": "inhale",
+        "dosageFrequencyTypeId": "2",
+        "dosageFrequencyDescription": "DAILY",
+        "daysSupply": "0",
+        "dispense": "1",
+        "dispenseAsWritten": "N",
+        "dispenseNumberQualifier": "IH",
+        "dispenseNumberQualifierDescription": "Inhaler",
+        "patientFriendlySig": "2 puffs inhale daily as needed (PRN)",
+        "takeAsNeeded": "Y",
+        "prescriptionNotes": "as needed",
+        "physicianName": " BOB  JONES MD  ",
+        "prescriptionDate": "2014-11-03T06:00:00.000+0000",
+        "finalDestinationType": "0",
+        "formularyChecked": "true",
+        "formularyTypeId": "S",
+        "status": "C",
+        "subStatus": "S"
+      }
+    }
+  ],
+  "discontinuedMedications": [
+    {
+      "id": "3ce2ef3fe8454ca19ca7289234047984",
+      "timestamp": 1420446322159,
+      "active": false,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "newcropAttributes": {
+        "originalPrescriptionGuid": "2aaf4959-d397-4782-bbca-c6cd9b22cb2b",
+        "prescriptionGuid": "3ce2ef3f-e845-4ca1-9ca7-289234047984",
+        "drugId": "279394",
+        "rxcui": "745679",
+        "drugName": "albuterol sulfate",
+        "drugInfo": "albuterol sulfate HFA 90 mcg/actuation aerosol inhaler",
+        "strength": "90",
+        "strengthUom": "mcg/actuation",
+        "dosageNumberTypeId": "6",
+        "dosageNumberDescription": "2",
+        "dosageFormTypeId": "9",
+        "dosageFormDescription": "puff",
+        "dosageRouteTypeId": "11",
+        "dosageRouteDescription": "inhale",
+        "dosageFrequencyTypeId": "2",
+        "dosageFrequencyDescription": "DAILY",
+        "daysSupply": "0",
+        "dispense": "1",
+        "dispenseAsWritten": "N",
+        "dispenseNumberQualifier": "IH",
+        "dispenseNumberQualifierDescription": "Inhaler",
+        "patientFriendlySig": "2 puffs inhale daily as needed (PRN)",
+        "takeAsNeeded": "Y",
+        "prescriptionNotes": "as needed",
+        "physicianName": " BOB  JONES MD  ",
+        "prescriptionDate": "2014-11-03T13:34:00.000+0000",
+        "finalDestinationType": "0",
+        "formularyChecked": "true",
+        "formularyTypeId": "S",
+        "status": "C",
+        "subStatus": "S"
+      }
+    },
+    {
+      "id": "842028b84a414a5f8375a6fdd195b22f",
+      "timestamp": 1420446501079,
+      "active": false,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "newcropAttributes": {
+        "originalPrescriptionGuid": "842028b8-4a41-4a5f-8375-a6fdd195b22f",
+        "prescriptionGuid": "842028b8-4a41-4a5f-8375-a6fdd195b22f",
+        "drugId": "279394",
+        "rxcui": "745679",
+        "drugName": "albuterol sulfate",
+        "drugInfo": "albuterol sulfate HFA 90 mcg/actuation aerosol inhaler",
+        "strength": "90",
+        "strengthUom": "mcg/actuation",
+        "dosageNumberTypeId": "6",
+        "dosageNumberDescription": "2",
+        "dosageFormTypeId": "9",
+        "dosageFormDescription": "puff",
+        "dosageRouteTypeId": "11",
+        "dosageRouteDescription": "inhale",
+        "dosageFrequencyTypeId": "2",
+        "dosageFrequencyDescription": "DAILY",
+        "daysSupply": "0",
+        "dispense": "1",
+        "dispenseAsWritten": "N",
+        "dispenseNumberQualifier": "IH",
+        "dispenseNumberQualifierDescription": "Inhaler",
+        "patientFriendlySig": "2 puffs inhale daily as needed (PRN)",
+        "takeAsNeeded": "Y",
+        "prescriptionNotes": "as needed",
+        "physicianName": " BOB  JONES MD  ",
+        "prescriptionDate": "2014-11-03T06:00:00.000+0000",
+        "finalDestinationType": "0",
+        "formularyChecked": "true",
+        "formularyTypeId": "S",
+        "status": "C",
+        "subStatus": "S"
+      }
+    }
+  ],
+  "allergies": [
+    {
+      "id": "1587",
+      "timestamp": 1417078360326,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-01-01T12:00:00.000+0000",
+      "productNameText": "Aspirin",
+      "fdbCode": {
+        "value": "6554",
+        "description": "Aspirin",
+        "codingSystem": "FDB ALLERGY"
+      },
+      "rxNormCode": {
+        "value": "1191",
+        "description": "Aspirin",
+        "codingSystem": "RXCUI ALLERGY"
+      },
+      "reactionText": "Wheezing",
+      "severityText": "Mild",
+      "statusText": "Active"
+    },
+    {
+      "id": "476",
+      "timestamp": 1417078360326,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "startDate": "2014-11-27T08:52:37.740+0000",
+      "productNameText": "Penicillins",
+      "fdbCode": {
+        "value": "245",
+        "description": "Penicillins",
+        "codingSystem": "FDB ALLERGY"
+      },
+      "rxNormCode": {
+        "value": "7986",
+        "description": "Penicillins",
+        "codingSystem": "RXCUI ALLERGY"
+      },
+      "reactionText": null,
+      "severityText": "Severe",
+      "statusText": "Active"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "1417184886279291493",
+      "timestamp": 1417184901077,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-11-28T14:28:06.279+0000",
+      "procedureType": "PROCEDURE",
+      "snomedCode": {
+        "value": "449924003",
+        "description": "Destructive procedure on lower leg (procedure)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "cptCode": null,
+      "description": null,
+      "status": {
+        "value": "completed",
+        "description": "Completed",
+        "codingSystem": "ActStatus"
+      },
+      "reasonNotDoneCode": null,
+      "facility": null,
+      "performer": {
+        "personId": "NJ5553BPR",
+        "name": {
+          "givenName": "BOB",
+          "secondGivenName": null,
+          "middleName": null,
+          "surname": "JONES",
+          "displayedName": "BOB JONES"
+        },
+        "addresses": {
+          "addresses": [
+            
+          ]
+        },
+        "contacts": {
+          "contacts": [
+            
+          ]
+        }
+      },
+      "secondaryParticipants": null,
+      "bodySiteCode": null,
+      "substance": null,
+      "method": null,
+      "position": null,
+      "indications": [
+        
+      ]
+    },
+    {
+      "id": "1417518841746956866",
+      "timestamp": 1417518854269,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-12-02T11:14:01.746+0000",
+      "procedureType": "OBSERVATION",
+      "snomedCode": {
+        "value": "443258007",
+        "description": "Excision of entire head of first metatarsal (procedure)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "cptCode": null,
+      "description": null,
+      "status": {
+        "value": "completed",
+        "description": "Completed",
+        "codingSystem": "ActStatus"
+      },
+      "reasonNotDoneCode": null,
+      "facility": null,
+      "performer": {
+        "personId": "NJ5553BPR",
+        "name": {
+          "givenName": "BOB",
+          "secondGivenName": null,
+          "middleName": null,
+          "surname": "JONES",
+          "displayedName": "BOB JONES"
+        },
+        "addresses": {
+          "addresses": [
+            
+          ]
+        },
+        "contacts": {
+          "contacts": [
+            
+          ]
+        }
+      },
+      "secondaryParticipants": null,
+      "bodySiteCode": null,
+      "substance": null,
+      "method": null,
+      "position": null,
+      "indications": [
+        
+      ]
+    }
+  ],
+  "plansOfCare": [
+    {
+      "@type": "vericle.api.phi.domain.PlanOfCareGoalAndInstructionsDto",
+      "id": "1420806276182207810",
+      "timestamp": 1420806276182,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2015-01-09T12:24:36.182+0000",
+      "planOfCareType": "CARE_PLAN_GOAL_AND_INSTRUCTIONS",
+      "goalSnomedCode": {
+        "value": "225323000",
+        "description": "Smoking cessation education (procedure)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "instructionsText": "Please do not smoke"
+    },
+    {
+      "@type": "vericle.api.phi.domain.PlanOfCareReferralToOtherProvider",
+      "id": "1417185652305710586",
+      "timestamp": 1417185652305,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-11-05T14:40:52.305+0000",
+      "planOfCareType": "REFERRAL_TO_OTHER_PROVIDER",
+      "referringPersonName": "Dr. Herry Seven",
+      "referringPersonAddress": "2050 Bamako Place, Washington, DC 20521-2050",
+      "reason": "Elvis is 80 yrs old!"
+    },
+    {
+      "@type": "vericle.api.phi.domain.PlanOfCareClinicalInstructionDto",
+      "id": "1417185889127286171",
+      "timestamp": 1417185889127,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-11-25T14:44:49.127+0000",
+      "planOfCareType": "CLINICAL_INSTRUCTION",
+      "description": "Some instructions text should be here"
+    }
+  ],
+  "functionalStatuses": [
+    {
+      "id": "1417186932238672044",
+      "timestamp": 1417186952692,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "date": "2014-11-28T15:02:12.238+0000",
+      "type": "FUNCTIONAL_STATUS_PROBLEM_OBSERVATION",
+      "snomedCode": {
+        "value": "128277003",
+        "description": "Cellulitis of head (disorder)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "narrative": null
+    }
+  ],
+  "familyHistories": [
+    {
+      "id": "1417186739196885862",
+      "timestamp": 1417186760347,
+      "active": true,
+      "user": "kirill",
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "relationCode": {
+        "value": "PRN",
+        "description": "Parent",
+        "codingSystem": "RoleCode"
+      },
+      "startDate": "2014-11-28T14:58:59.196+0000",
+      "endDate": null,
+      "problemType": {
+        "value": "282291009",
+        "description": "Diagnosis",
+        "codingSystem": "SCT"
+      },
+      "problemValueSnomed": {
+        "value": "195888009",
+        "description": "Proteus pneumonia (disorder)",
+        "codingSystem": "SNOMED-CT"
+      },
+      "problemStatus": {
+        "value": "55561003",
+        "description": "Active",
+        "codingSystem": "SNOMED CT"
+      },
+      "description": null,
+      "noProblemKnown": false
+    }
+  ],
+  "labTests": [
+    {
+      "id": "1416301406180666481",
+      "timestamp": 1416301406181,
+      "active": true,
+      "user": null,
+      "patientId": "4206001",
+      "providerId": "123456789BPR",
+      "messageCtrlId": "NIST-LRI-GU-001.00",
+      "patient": {
+        "patientIdentifier": {
+          "entityId": "VRC1234567",
+          "assignedAuthority": {
+            "namespaceId": "NIST MPI",
+            "universalId": "2.16.840.1.113883.3.72.5.30.2",
+            "universalIdType": "ISO"
+          },
+          "identifierTypeCode": "MR"
+        },
+        "patientName": {
+          "prefix": null,
+          "givenName": "Rella",
+          "secondGivenName": "A",
+          "surname": "Cindy",
+          "surnameSuffix": "JR"
+        },
+        "dateOfBirth": "19610615",
+        "gender": "M",
+        "raceCode": {
+          "codes": [
+            {
+              "value": "2106-3",
+              "description": "White",
+              "codingSystem": "HL70005"
+            }
+          ]
+        }
+      },
+      "orderInfo": {
+        "placerOrderId": {
+          "entityId": "ORD723222",
+          "assignedAuthority": {
+            "namespaceId": "NIST EHR",
+            "universalId": "2.16.840.1.113883.3.72.5.24",
+            "universalIdType": "ISO"
+          }
+        },
+        "fillerOrderId": {
+          "entityId": "R-783274",
+          "assignedAuthority": {
+            "namespaceId": "NIST Lab Filler",
+            "universalId": "2.16.840.1.113883.3.72.5.25",
+            "universalIdType": "ISO"
+          }
+        },
+        "placeGroupId": {
+          "entityId": "GORD874211",
+          "assignedAuthority": {
+            "namespaceId": "NIST EHR",
+            "universalId": "2.16.840.1.113883.3.72.5.24",
+            "universalIdType": "ISO"
+          }
+        },
+        "orderParent": null,
+        "orderParentResult": null,
+        "observationDateTime": "2011-03-31T22:05:51.000+0000",
+        "observationEndDateTime": null,
+        "reportDateTime": "2011-04-01T00:04:28.000+0000",
+        "requestedTest": {
+          "codes": [
+            {
+              "value": "30341-2",
+              "description": "Erythrocyte sedimentation rate",
+              "codingSystem": "LN"
+            }
+          ]
+        },
+        "relevantClinicalInformationCode": {
+          "codes": [
+            {
+              "value": "7520000",
+              "description": "fever of unknown origin",
+              "codingSystem": "SCT"
+            }
+          ]
+        },
+        "resultStatus": "F",
+        "specimenActionCode": "L"
+      },
+      "orderingProvider": {
+        "name": {
+          "prefix": "DR",
+          "givenName": "Nicholas",
+          "secondGivenName": "M",
+          "surname": "Radon",
+          "surnameSuffix": "JR"
+        },
+        "id": {
+          "entityId": "57422",
+          "assignedAuthority": {
+            "namespaceId": "NIST-AA-1",
+            "universalId": "2.16.840.1.113883.3.72.5.30.1",
+            "universalIdType": "ISO"
+          }
+        },
+        "nameTypeCode": "L",
+        "idTypeCode": "NPI"
+      },
+      "specimen": {
+        "specimenTypeCode": {
+          "codes": [
+            {
+              "value": "119297000",
+              "description": "BLD",
+              "codingSystem": "SCT"
+            }
+          ]
+        },
+        "collectionDateTimeStart": "2011-03-31T22:05:51.000+0000",
+        "collectionDateTimeEnd": null,
+        "specimenRejectReasonCode": {
+          "codes": [
+            
+          ]
+        },
+        "specimenQuality": null,
+        "specimenAppropriateness": null,
+        "specimenConditionCode": {
+          "codes": [
+            {
+              "value": "COOL",
+              "description": "Cool",
+              "codingSystem": "HL70493"
+            }
+          ]
+        }
+      },
+      "testResults": {
+        "observations": [
+          {
+            "id": "1416301406179575154",
+            "observationSubId": "1",
+            "observationType": null,
+            "testCode": {
+              "codes": [
+                {
+                  "value": "30341-2",
+                  "description": "Erythrocyte sedimentation rate",
+                  "codingSystem": "LN"
+                }
+              ]
+            },
+            "valueType": "NM",
+            "result": "10",
+            "uom": "mm/h",
+            "range": "0 to 17",
+            "abnormalFlag": "N",
+            "status": "F",
+            "dateTimeOfObservation": "2011-03-31T22:05:51.000+0000",
+            "dateTimeOfAnalysis": "2011-03-31T23:05:51.000+0000",
+            "performerInfo": {
+              "performingOrganization": {
+                "name": "Century Hospital",
+                "id": {
+                  "entityId": "987",
+                  "assignedAuthority": {
+                    "namespaceId": "NIST-AA-1",
+                    "universalId": "2.16.840.1.113883.3.72.5.30.1",
+                    "universalIdType": "ISO"
+                  }
+                },
+                "idTypeCode": "XX",
+                "address": {
+                  "streetAddress": "2070 Test Park",
+                  "otherDesignation": null,
+                  "city": "Los Angeles",
+                  "state": "CA",
+                  "zipCode": "90067",
+                  "country": "USA",
+                  "countryCode": "06037"
+                }
+              },
+              "performingOrganizationMedicalDirector": {
+                "name": {
+                  "prefix": "Dr.",
+                  "givenName": "Phil",
+                  "secondGivenName": "J.",
+                  "surname": "Knowsalot",
+                  "surnameSuffix": "III"
+                },
+                "identifier": {
+                  "entityId": "2343242",
+                  "assignedAuthority": {
+                    "namespaceId": "NIST-AA-1",
+                    "universalId": "2.16.840.1.113883.3.72.5.30.1",
+                    "universalIdType": "ISO"
+                  },
+                  "identifierTypeCode": "DN"
+                }
+              }
+            },
+            "notes": null,
+            "images": [
+              
+            ],
+            "reasonNotDone": null
+          }
+        ]
+      },
+      "notes": {
+        "comment": "Patient is extremely anxious about needles used for drawing blood."
+      },
+      "childrenCount": 0,
+      "triggeredNotifications": {
+        "notifications": [
+          
+        ]
+      },
+      "realId": "546b0b5ee4b0dac9d8399ad7"
+    }
+  ],
+  "labTestsMetaInfo": {
+    
+  },
+  "patientPortalAccessCredentials": {
+    "patientCredentials": {
+      "urlcode": "Rf8jz6mB78iCQtr643xyEinBCAMJ",
+      "passcode": null,
+      "passcodeSetDate": "2014-11-27T08:52:48.634+0000"
+    },
+    "authorizedRepresentativeCredentials": null
+  }
+}

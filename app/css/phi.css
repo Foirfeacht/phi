@@ -1,0 +1,144 @@
+.phiContainer .form-control.ng-invalid {
+	background: #FFDDDD;
+}
+.phiContainer label {
+	margin-top: 4px;
+}
+.phiContainer .phiTab {
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 100%;
+}
+.phiContainer .dataPlaceholder>div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	margin-left: -200px;
+}
+#phiTabsContent>div {
+	height: 100%;
+}
+
+
+.dropdown-submenu {
+	position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px;
+	margin-left: -1px;
+	-webkit-border-radius: 0 6px 6px 6px;
+	-moz-border-radius: 0 6px 6px;
+	border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+	display: block;
+}
+.dropdown-submenu>a:after {
+	display: block;
+	content: " ";
+	float: right;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #ccc;
+	margin-top: 5px;
+	margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+	border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+	float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+	left: 0;
+	width: 200px;
+	margin-left: -185px;
+	-webkit-border-radius: 6px 0 6px 6px;
+	-moz-border-radius: 6px 0 6px 6px;
+	border-radius: 6px 0 6px 6px;
+}
+
+.ccdaDocParams {
+	max-height: 650px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.ccdaDocParams .entriesBlock {
+	margin-bottom: 8px;
+}
+.ccdaDocParams .entriesBlock .entriesBlockTitle {
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+.ccdaDocParams .entriesBlock .entriesBlockContent {
+	padding-left: 20px;
+}
+.ccdaDocParams .entriesBlock .entriesBlockContent .checkbox {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+.ccdaDocParams .ccdaDocTypeSelector, .ccdaDocReferralSelector {
+	margin-bottom: 14px;
+}
+.ccdaDocParams .ccdaDocTypeSelector .radio {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.briefSummary {	
+}
+.briefSummary .col-sm-6 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.briefSummary.colorpicker.colorpicker-visible {
+	margin-left: -80px !important;
+}
+
+.briefSummaryPanel.panel {
+	margin-bottom: 10px;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+.briefSummaryPanel a {
+	cursor: pointer;
+}
+.briefSummaryPanel .panel-heading {
+	cursor: pointer;
+	padding: 6px 9px;
+}
+.briefSummaryPanel .panel-title {
+	font-size: 14px;
+}
+.briefSummaryPanel .panel-body {
+	padding: 9px;
+}
+.briefSummaryPanel button.glyphiconBtn {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 none;
+	cursor: pointer;
+	padding: 0;
+	color: #000;
+	float: right;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.8;
+	opacity: 0.2;
+	text-shadow: 0 1px 0 #fff;
+	margin-left: 8px;
+}
+.briefSummaryPanel button.glyphiconBtn.glyphiconBtnLeft {
+	float: none;
+}
+.briefSummaryPanel button.glyphiconBtn:hover {
+	color: #000;
+	cursor: pointer;
+	opacity: 0.5;
+	text-decoration: none;
+}

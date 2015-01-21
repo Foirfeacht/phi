@@ -1,0 +1,7 @@
+
+syntax: regexp
+^node_modules$
+syntax: regexp
+^app/lib_bower$
+syntax: regexp
+^data_vaultq/phi/data$

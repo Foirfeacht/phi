@@ -1,0 +1,13 @@
+<div>
+	<div class="dataPlaceholder" ng-show="!item">
+		<div>Select an entry from the left panel to see the details...</div>
+	</div>
+  
+	<div class="singleItemForm" ng-show="item">  
+		<form name="itemForm" novalidate>
+			<div ng-transclude></div>
+		</form>
+	</div>
+</div>
+
+

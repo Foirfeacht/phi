@@ -1,0 +1,53 @@
+<div>
+	<style>
+	.listActionBtnsContainer button {
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+	.listActionBtnsContainer {
+		margin-bottom: 5px!important;
+	}
+	</style>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="form-group listActionBtnsContainer">
+				<button class="btn btn-primary" ng-click="addNew()" ng-show="attrs.displayNewBtn">
+					<i class="fa fa-lg fa-plus"></i>New
+				</button>
+				<button class="btn btn-danger" ng-click="showRemoveConfirmation()" ng-show="isAnySelected()">
+					<i class="fa fa-lg fa-trash-o"></i>Remove
+				</button>
+				
+				<div class="input-group pull-right" style="width: 180px;">
+					<div class="input-group-addon">
+						<i class="fa fa-search" />
+					</div>
+					<input class="form-control" type="text" placeholder="Filter query" ng-model="filterQuery" />
+				</div>
+				
+				<span ng-transclude/>
+			</div>			
+		</div>
+		
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="removeConfirmModal" tabindex="-1" role="dialog" aria-labelledby="removeConfirmModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title" id="removeConfirmModalLabel">Confirm</h4>
+				</div>
+				<div class="modal-body">Are you sure you want to remove selected item?</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hideRemoveConfirmation()">Cancel</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="removeSelected()">Remove it</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

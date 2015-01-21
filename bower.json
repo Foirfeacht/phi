@@ -1,0 +1,17 @@
+{
+  "name": "phi-dynamic-directives-seed",
+  "description": "A starter project for PHI dynamic directives",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-resource": "1.2.x",
+    "bootstrap": "3.3.1",    
+    "underscore": "1.7.0",
+    "ng-table": "~0.3.3",
+    "angular-bootstrap": "~0.12.0",
+    "angular-ui-date": "0.0.7",
+    "uuid.js": "*"
+  }
+}

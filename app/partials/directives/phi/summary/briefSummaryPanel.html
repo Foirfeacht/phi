@@ -1,0 +1,17 @@
+<div class="panel panel-default briefSummaryPanel" ng-style="elStyle">
+	<div class="panel-heading" ng-style="headingStyle" >
+		<span>{{title}}</span>
+		
+		<button type="button" class="glyphiconBtn" ng-click="toggleCollapseStatus();">
+			<span ng-show="!panelState.isCollapsed" class="glyphicon glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<span ng-show="panelState.isCollapsed" class="glyphicon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		</button>
+		
+		<button type="button" class="glyphiconBtn dashboardPanelColorBtn">
+			<span class="glyphicon glyphicon glyphicon-cog" aria-hidden="true"></span>
+		</button>		
+	</div>
+	<div class="panel-body" ng-hide="panelState.isCollapsed">
+		<div ng-transclude/>
+	</div>
+</div>
